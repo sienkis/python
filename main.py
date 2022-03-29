@@ -1,9 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-y = np.array([206, 196, 118, 92 , 83 , 39 , 1])
-mylabels = ["SPD", "CDU/CSU", "Greens", "FDP", "AFD", "Left Party","Others"]
-mycolors = ["#ff0000", "black", "#66ff66", "#ffff66","#66ccff" ,"#cc0052","#e6e6e6"]
-plt.pie(y, labels = mylabels, startangle = 100,colors = mycolors)
-plt.legend(title = "wybory do bundestagu 2021:")
-plt.show()
+
+x = np.array(["NIEMCY", "FRANCJA", "WŁOCHY", "HISZPANIA", "POLSKA", "HOLANDIA","BELGIA","SZWECJA","RUMUNIA","AUSTRIA","CZECHY","IRLANDIA","PORTUGALIA","GRECJA","DANIA","WĘGRY","FINLANDIA","SŁOWACJA","BUŁGARIA","CHORWACJA","LITWA","SŁOWENIA","LUKSEMBURG","ŁOTWA","ESTONIA","CYPR","MALTA"]);
+y = np.array([3134070, 2228857, 1672438, 1113851 , 424269 , 697219 , 421611,462057,169578,349344,174412,265835,184931, 175888,276805,112399,214062,80958,47364,45557,38637,39769,54195,25021,20916,17901,9898]);
+plt.bar(x,y);
+plt.show();
